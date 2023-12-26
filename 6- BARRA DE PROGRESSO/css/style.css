@@ -1,0 +1,72 @@
+body{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 100%;    
+    margin: 0 auto;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #b09f9f;
+    position: relative;
+}
+
+.progress{
+    width: 0%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, red, blue, green);
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+.controls{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 35rem;
+}
+
+#previous-btn{
+    padding: 0.5rem 1rem;
+    background-color: #c63a3a;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#previous-btn:hover{
+    background-color: #810c0c;
+}
+
+#next-btn{
+    padding: 0.5rem 1rem;
+    background-color: #168738;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#next-btn:hover{
+    background-color:#0b5722;
+}
+
+button i {
+    padding: 0 0.5rem;
+    margin: 0;
+}
