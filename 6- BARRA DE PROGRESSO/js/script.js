@@ -22,3 +22,7 @@ function previousStep(){
 nextBtn.addEventListener("click", nextStep)
 previousBtn.addEventListener("click", previousStep)
 
+
+
+
+   
