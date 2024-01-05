@@ -9,7 +9,7 @@ function uptdateProgressBar(){
 
 function nextStep(){
 progress += 10
-if(progress>100) progress = 100;
+if(progress > 100) progress = 100;
 uptdateProgressBar()
 }
 
