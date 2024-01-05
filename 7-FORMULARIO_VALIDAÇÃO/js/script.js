@@ -38,7 +38,6 @@ function validateInputs(){
         setError(email, "Preenchimento obrigatório");
     }else if(!isValidEmail(emailValue)){
         setError(email, "E-mail inválido!")
-
     }
 
     if(assuntoValue == ""){
