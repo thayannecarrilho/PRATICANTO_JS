@@ -18,7 +18,7 @@ function setError(input, errorMessage){
 
 function resetErrors(){
     errorMessages.forEach((msg) =>{
-        msg.textContent = ""
+        msg.textContent = "";
     })
     nome.parentElement.classList.remove("error")
     email.parentElement.classList.remove("error")
@@ -31,23 +31,20 @@ function validateInputs(){
     const emailValue = email.value.trim()
     const assuntoValue = assunto.value.trim()
     const mensagemValue = mensagem.value.trim()
-    if(nomeValue == ""){
+    if(nomeValue === ""){
         setError(nome, "Preenchimento obrigatório");
     }
-    if(emailValue == ""){
+    if(emailValue === ""){
         setError(email, "Preenchimento obrigatório");
     }else if(!isValidEmail(emailValue)){
         setError(email, "E-mail inválido!")
     }
 
-    if(assuntoValue == ""){
+    if(assuntoValue === ""){
         setError(assunto, "Preenchimento obrigatório");
     }
-    if(mensagemValue == ""){
+    if(mensagemValue === ""){
         setError(mensagem, "Preenchimento obrigatório");
     }
 }
 
-function isValidEmail(email){
-    return /^[~\s@]+@[^\s@]+\.[^\s@]+$.test(email)
-}

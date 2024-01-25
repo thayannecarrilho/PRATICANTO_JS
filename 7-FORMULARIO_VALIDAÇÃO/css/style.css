@@ -62,5 +62,5 @@ button:hover{
 
 .error input,
 .error textarea{
-    border: 1px solid #e21111;
+    border-color: #e21111;
 }
